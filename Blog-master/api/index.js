@@ -21,7 +21,7 @@ app.use(cookieParser());
 dbconnection();
 app.get("/",(req,res)=>{
   res.send("hello");
-}
+});
 app.post("/register", async (req, res) => {
   // res.json('test ok')
   const { username, password } = req.body;
