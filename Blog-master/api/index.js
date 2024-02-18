@@ -14,7 +14,7 @@ const cookieParser = require("cookie-parser");
 const uploadMiddleware = multer({ dest: "uploads/" });
 const secret = "buxuw82189xbxsh";
 //{credentials:true,origin:'http://localhost:3000'}
-app.use(cors({ credentials: true, origin: "http://localhost:3000" }));
+app.use(cors({ credentials: true, origin: "*" }));
 app.use(express.json());
 app.use(cookieParser());
 
